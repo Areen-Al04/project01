@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+  </head>
+  <body>
+     <form>
+       <label for="fullname">Full Name</label>
+       <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          required
+          minlength="3"
+       >
+       
+       <label for="email">Email</label>
+       <input
+          type="email"
+          id="email"
+          name="email"
+          required
+       >
+   
+       <label for="password">Password</label>
+       <input
+          type="password"
+          id="password" 
+          name="password" 
+          required 
+          minlength="8"
+       >
+
+       <label for="student">Student</label>
+       <input
+          type="radio"
+          id="student"
+          name="status"
+          value="student"
+          required
+       >
+       <label for="professional">Professional</label>
+       <input
+          type="radio"
+          id="professional"
+          name="status"
+          value="professional" 
+       >
+          
+       <label for="agreement">I agree to the terms and conditions</label>
+       <input 
+          type="checkbox" 
+          id="agreement"
+          name="agreement"
+          required 
+       >
+
+       <label for="track">Choose your track</label>
+       <select id="track" name="track" required>
+         <option value="">Select a track</option>
+         <option value="ai">Artificial Intelligence</option>
+         <option value="web">Web Development</option> 
+         <option value="data">Data Science</option>
+         <option value="cybersecurity">Cybersecurity</option>
+       </select>
+      
+       <label for="message">Tell us about yourself</label>
+       <textarea
+          id="message"
+          name="message"
+          required
+          minlength="10"
+      ></textarea>
+
+      <button type="submit">Register</button> 
+     </form>
+</body>
+</html>
+
+
